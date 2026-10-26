@@ -125,8 +125,9 @@ Estas áreas funcionam localmente e devem ser ligadas a serviços reais antes de
 8. Em `contactos.html`, testar validação, confirmação simulada, links de email/telefone/WhatsApp e o mapa esquemático.
 9. Em `faq.html`, pesquisar, filtrar por tema, limpar e usar o acordeão apenas com teclado.
 10. Em todas as páginas, verificar o banner de cookies, a escolha de análise, o reset em `cookies.html`, o menu mobile e os links legais.
+11. Abrir um caminho inexistente, por exemplo `/pagina-inexistente`, e confirmar o estado HTTP 404, a página personalizada, os estilos, os atalhos e a ausência de overflow em desktop e mobile. Em produção, a Vercel serve `404.html`.
 
-**Nota:** a página `design-system.html` é intencionalmente `noindex` e não está no sitemap. A versão PT/EN não foi implementada; o site está integralmente em pt-PT.
+**Nota:** `404.html` e `design-system.html` são intencionalmente `noindex` e não estão no sitemap. A versão PT/EN não foi implementada; o site está integralmente em pt-PT.
 
 ## Conteúdo legal
 
