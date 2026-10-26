@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marca uma aula experimental | FORJA Training Club Braga</title>
+  <meta name="description" content="Marca uma aula experimental gratuita na FORJA Training Club, em Braga. Três passos, escolha de aula e dia, informação de saúde opcional e confirmação simulada.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0B">
+  <link rel="canonical" href="https://forja.pt/experimenta.html">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FORJA Training Club">
+  <meta property="og:title" content="Marca uma aula experimental — FORJA Training Club">
+  <meta property="og:description" content="Escolhe o dia e a aula. Sem taxa e sem compromisso. A equipa confirma contigo.">
+  <meta property="og:url" content="https://forja.pt/experimenta.html">
+  <meta property="og:image" content="https://forja.pt/images/og-forja.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/head.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://forja.pt/" },
+          { "@type": "ListItem", "position": 2, "name": "Experimenta", "item": "https://forja.pt/experimenta.html" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "name": "Marca uma aula experimental — FORJA Training Club",
+        "url": "https://forja.pt/experimenta.html",
+        "description": "Formulário em três passos para marcar uma aula experimental ou visita com avaliação inicial na FORJA, em Braga.",
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://forja.pt/experimenta.html",
+            "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/MobileWebPlatform"]
+          },
+          "result": { "@type": "Reservation", "name": "Aula experimental FORJA" }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-page="trial">
+  <header class="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Localização">
+          <a href="index.html">Início</a>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+          <span class="breadcrumbs__current" aria-current="page">Experimenta</span>
+        </nav>
+        <div class="page-hero__grid">
+          <div>
+            <p class="eyebrow" style="margin-top:1.5rem;">Aula experimental gratuita</p>
+            <h1 class="display-xl page-hero__title" id="page-title">Marca a tua primeira vez.</h1>
+            <p class="page-hero__description">Sem taxa, sem compromisso e sem teres de estar em forma para começar. Escolhe uma aula ou uma visita e a equipa confirma contigo.</p>
+          </div>
+          <aside class="page-hero__aside">
+            <strong>Demora cerca de 2 minutos</strong>
+            <p>Precisas apenas de uma data, um contacto e do essencial sobre o teu ponto de partida. A informação de saúde é opcional.</p>
+            <p class="demo-note" style="margin-top:0.8rem;">Formulário e confirmação simulados nesta demonstração. Nada é enviado.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" aria-labelledby="trial-form-title">
+      <div class="container">
+        <div class="form-layout">
+          <div class="form-main">
+            <div class="form-main__head" data-booking-form-head>
+              <h2 id="trial-form-title">Marca a tua experiência</h2>
+              <p>Três passos. Podes voltar atrás em qualquer momento antes de confirmar.</p>
+            </div>
+
+            <ol class="steps" aria-label="Progresso da marcação">
+              <li class="step is-active" data-step-indicator="1" aria-current="step">
+                <span class="step__num">01</span>
+                <span class="step__label">Aula e data</span>
+              </li>
+              <li class="step" data-step-indicator="2">
+                <span class="step__num">02</span>
+                <span class="step__label">Os teus dados</span>
+              </li>
+              <li class="step" data-step-indicator="3">
+                <span class="step__num">03</span>
+                <span class="step__label">Confirmar</span>
+              </li>
+            </ol>
+
+            <div class="form-error-summary" data-error-summary role="alert" tabindex="-1"></div>
+            <p class="sr-only" id="trial-announcer" aria-live="polite"></p>
+
+            <form id="trial-form" novalidate>
+              <section class="form-step" data-step="1" aria-labelledby="trial-step-1-title">
+                <header class="form-step__header">
+                  <p class="eyebrow">Passo 01 / Aula e data</p>
+                  <h3 id="trial-step-1-title">O que te apetece experimentar?</h3>
+                  <p>Podes escolher uma aula do horário ou uma visita com avaliação inicial. As duas opções são gratuitas.</p>
+                </header>
+
+                <fieldset class="choice-grid">
+                  <legend class="choice-grid__legend">Tipo de experiência</legend>
+                  <label class="choice-card">
+                    <input type="radio" name="tipo" value="aula" id="trial-type-aula" checked>
+                    <span class="choice-card__mark" aria-hidden="true"></span>
+                    <span class="choice-card__label">Aula experimental
+                      <span class="choice-card__hint">Participas numa aula de grupo, com adaptações.</span>
+                    </span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="tipo" value="visita" id="trial-type-visita">
+                    <span class="choice-card__mark" aria-hidden="true"></span>
+                    <span class="choice-card__label">Visita e avaliação
+                      <span class="choice-card__hint">Conheces o espaço e conversamos sobre objetivos.</span>
+                    </span>
+                  </label>
+                </fieldset>
+                <p class="form-field__error" data-field-error="tipo"></p>
+
+                <div class="form-grid" style="margin-top:1.2rem;">
+                  <div class="form-field form-field--full">
+                    <label class="form-field__label" for="trial-date">Data pretendida</label>
+                    <input id="trial-date" name="data" type="date" required aria-describedby="trial-date-hint trial-date-error">
+                    <p class="form-field__hint" id="trial-date-hint">Mostramos apenas as aulas que acontecem no dia escolhido. Podes marcar até 60 dias à frente.</p>
+                    <p class="form-field__error" id="trial-date-error" data-field-error="data"></p>
+                  </div>
+                </div>
+
+                <div data-aula-fields>
+                  <p class="filter-result" data-session-context hidden></p>
+                  <fieldset class="session-fieldset">
+                    <legend class="form-field__label">Horário disponível</legend>
+                    <p class="form-field__hint">Escolhe o horário que te dá mais jeito. A disponibilidade é simulada.</p>
+                    <div class="session-picker" id="trial-slots" data-session-slots tabindex="-1" aria-describedby="trial-slots-hint"></div>
+                    <p class="form-field__hint" id="trial-slots-hint">A lista respeita o dia e a modalidade escolhidos.</p>
+                    <p class="form-field__error" data-field-error="sessao" aria-live="polite"></p>
+                  </fieldset>
+                </div>
+
+                <div data-visita-fields hidden>
+                  <div class="form-field" style="margin-top:1.2rem;">
+                    <label class="form-field__label" for="trial-period">Período preferido</label>
+                    <select id="trial-period" name="periodo" disabled>
+                      <option value="manha">Manhã · 10h00</option>
+                      <option value="tarde">Tarde · 15h00</option>
+                      <option value="fimdia">Fim do dia · 18h30</option>
+                    </select>
+                    <p class="form-field__hint">A equipa confirma a hora exata contigo. A visita dura cerca de 45 minutos.</p>
+                    <p class="form-field__error" id="trial-period-error" data-field-error="periodo"></p>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <p class="form-legal-links">A disponibilidade mostrada é simulada.</p>
+                  <div class="form-actions__right">
+                    <button class="btn btn--solid" type="button" data-next>
+                      <span>Continuar</span>
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+                    </button>
+                  </div>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="2" aria-labelledby="trial-step-2-title" hidden>
+                <header class="form-step__header">
+                  <p class="eyebrow">Passo 02 / Os teus dados</p>
+                  <h3 id="trial-step-2-title">Como te encontramos?</h3>
+                  <p>Só usamos estes dados para gerir esta marcação e confirmar contigo. Nada é enviado nesta demonstração.</p>
+                </header>
+
+                <div class="form-grid">
+                  <div class="form-field form-field--full">
+                    <label class="form-field__label" for="trial-name">Nome completo</label>
+                    <input id="trial-name" name="nome" type="text" autocomplete="name" required aria-describedby="trial-name-error">
+                    <p class="form-field__error" id="trial-name-error" data-field-error="nome"></p>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-field__label" for="trial-email">Email</label>
+                    <input id="trial-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="trial-email-error">
+                    <p class="form-field__error" id="trial-email-error" data-field-error="email"></p>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-field__label" for="trial-phone">Telemóvel</label>
+                    <input id="trial-phone" name="telemovel" type="tel" autocomplete="tel" inputmode="tel" placeholder="912 345 678" required aria-describedby="trial-phone-hint trial-phone-error">
+                    <p class="form-field__hint" id="trial-phone-hint">Usamos apenas para a confirmação.</p>
+                    <p class="form-field__error" id="trial-phone-error" data-field-error="telemovel"></p>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-field__label" for="trial-contact">Como preferes ser contactado?</label>
+                    <select id="trial-contact" name="contacto">
+                      <option value="whatsapp">WhatsApp</option>
+                      <option value="telefone">Chamada telefónica</option>
+                      <option value="email">Email</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-field__label" for="trial-goal">Objetivo principal (opcional)</label>
+                    <select id="trial-goal" name="objetivo">
+                      <option value="">Prefiro não indicar</option>
+                      <option value="forca">Ganhar força</option>
+                      <option value="resistencia">Melhorar a condição física</option>
+                      <option value="mobilidade">Mobilidade e recuperação</option>
+                      <option value="iniciantes">Começar do zero</option>
+                      <option value="geral">Sentir-me melhor no dia a dia</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button class="form-actions__back" type="button" data-prev>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-left"></use></svg>
+                    Voltar
+                  </button>
+                  <div class="form-actions__right">
+                    <button class="btn btn--solid" type="button" data-next>
+                      <span>Continuar</span>
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+                    </button>
+                  </div>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="3" aria-labelledby="trial-step-3-title" hidden>
+                <header class="form-step__header">
+                  <p class="eyebrow">Passo 03 / Confirmar</p>
+                  <h3 id="trial-step-3-title">Falta pouco.</h3>
+                  <p>Revê os dados. Podes partilhar informação de saúde se for útil para adaptarmos a sessão.</p>
+                </header>
+
+                <div class="form-field">
+                  <label class="form-field__label" for="trial-health">Informação de saúde relevante (opcional)</label>
+                  <textarea id="trial-health" name="saude" maxlength="600" aria-describedby="trial-health-hint"></textarea>
+                  <p class="form-field__hint" id="trial-health-hint">Exemplo: lesão antiga, limitação de movimento, recomendação médica. Não incluas exames ou diagnósticos detalhados.</p>
+                </div>
+                <p class="health-note">Esta informação é opcional e não substitui avaliação clínica. Se estiveres a recuperar de uma lesão, fala primeiro com o teu médico ou fisioterapeuta.</p>
+
+                <div class="summary-card" id="trial-summary" style="margin-top:1.2rem;"></div>
+
+                <div class="consent-list">
+                  <label class="checkbox" for="trial-privacy">
+                    <input id="trial-privacy" name="privacidade" type="checkbox" required aria-describedby="trial-privacy-error">
+                    <span>Li a <a href="privacidade.html" target="_blank" rel="noopener noreferrer">política de privacidade</a> e autorizo o tratamento dos dados para gerir esta marcação. Obrigatório.</span>
+                  </label>
+                  <p class="form-field__error" id="trial-privacy-error" data-field-error="privacidade"></p>
+                  <label class="checkbox" for="trial-marketing">
+                    <input id="trial-marketing" name="marketing" type="checkbox">
+                    <span>Quero receber novidades da FORJA por email. Opcional e cancelável a qualquer momento.</span>
+                  </label>
+                </div>
+
+                <p class="demo-note" style="margin-top:1rem;">Submeter aqui não cria uma reserva real. A confirmação final é simulada; liga para 253 456 789 se precisares de uma resposta imediata.</p>
+
+                <div class="form-actions">
+                  <button class="form-actions__back" type="button" data-prev>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-left"></use></svg>
+                    Voltar
+                  </button>
+                  <div class="form-actions__right">
+                    <button class="btn btn--solid" type="submit" data-submit-trial>
+                      <span>Confirmar marcação (simulada)</span>
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg>
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </form>
+
+            <div class="success-panel" id="booking-success" hidden>
+              <!-- Confirmação gerada por js/trial.js -->
+            </div>
+          </div>
+
+          <aside class="form-aside form-aside--dark">
+            <p class="eyebrow form-aside__eyebrow">O que acontece depois</p>
+            <h2>Uma visita. Zero pressão.</h2>
+            <p>O primeiro contacto serve para perceber se a FORJA faz sentido para ti. Não há venda agressiva nem contrato à saída.</p>
+            <ul class="aside-points">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg> A equipa confirma a disponibilidade por telefone, email ou WhatsApp.</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clock"></use></svg> Chega 15 minutos antes na primeira visita.</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg> Traz roupa confortável, água e toalha. Há material de empréstimo.</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-info"></use></svg> No fim, tiras dúvidas. A adesão é uma decisão tua, para depois.</li>
+            </ul>
+            <div class="aside-help">
+              <h3>Preferes falar primeiro?</h3>
+              <a href="tel:+351253456789"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"></use></svg> 253 456 789</a>
+              <a href="https://wa.me/351916789012" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"></use></svg> WhatsApp · 916 789 012</a>
+              <a href="mailto:ola@forja.pt"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"></use></svg> ola@forja.pt</a>
+            </div>
+            <p class="demo-note" style="margin-top:1rem;">Dados de contacto fictícios para demonstração.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"></footer>
+  <noscript><p style="padding:1rem; background:#F4F3EF; color:#0A0A0B;">O formulário precisa de JavaScript. Para marcares, liga para 253 456 789 ou envia email para ola@forja.pt.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

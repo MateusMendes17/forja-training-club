@@ -1,0 +1,474 @@
+/* ==========================================================================
+   FORJA Training Club — impressão
+   O horário, os planos e os conteúdos devem continuar legíveis em papel.
+   ========================================================================== */
+
+@page {
+  size: A4 portrait;
+  margin: 14mm 13mm;
+}
+
+*,
+*::before,
+*::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+html,
+body {
+  background: #fff !important;
+  color: #111 !important;
+  font-size: 10.5pt;
+  line-height: 1.45;
+}
+
+body {
+  padding: 0 !important;
+}
+
+.site-header,
+.site-footer,
+.mobile-menu,
+.mobile-bar,
+.floating-actions,
+.cookie-banner,
+.toast,
+.skip-link,
+.scroller-controls,
+.schedule-utility,
+.filter-panel,
+.view-toggle,
+.day-tabs,
+.modal,
+.lightbox,
+.sr-only,
+.no-print {
+  display: none !important;
+}
+
+.container,
+.container--narrow,
+.container--text {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.section {
+  padding: 10mm 0 !important;
+  background: #fff !important;
+  color: #111 !important;
+}
+
+.section--light,
+.section--panel,
+.section--dark,
+.theme-light {
+  background: #fff !important;
+  color: #111 !important;
+}
+
+.hero {
+  min-height: 0 !important;
+  background: #fff !important;
+  border: 0 !important;
+}
+
+.hero__media,
+.hero__grid,
+.hero__stamp,
+.hero__vertical,
+.hero__scroll,
+.hero__meta,
+.hero__lower {
+  display: none !important;
+}
+
+.hero__inner {
+  display: block !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+}
+
+.hero__content {
+  width: 100% !important;
+}
+
+.hero__title,
+.display-xxl,
+.display-xl,
+.display-lg,
+.display-md,
+.display-sm {
+  color: #111 !important;
+  -webkit-text-stroke: 0 !important;
+  font-size: 24pt !important;
+  line-height: 1.02 !important;
+  max-width: none !important;
+}
+
+.hero__title .line > span,
+.hero__title .line:nth-child(3) > span {
+  color: #111 !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+.eyebrow,
+.section-index,
+.mono-label,
+.form-field__label,
+.filter-field > span {
+  color: #444 !important;
+}
+
+.muted,
+.lead,
+p,
+li,
+dd,
+figcaption {
+  color: #333 !important;
+}
+
+a {
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #111 !important;
+  break-after: avoid;
+}
+
+p,
+li,
+figure,
+table,
+details {
+  break-inside: avoid;
+}
+
+img {
+  max-width: 100% !important;
+  filter: grayscale(1) contrast(1.05) !important;
+}
+
+.page-hero {
+  padding: 0 0 8mm !important;
+  background: #fff !important;
+  border-bottom: 1.5pt solid #111 !important;
+}
+
+.page-hero::before {
+  display: none !important;
+}
+
+.page-hero__grid {
+  display: block !important;
+}
+
+.page-hero__title {
+  margin-top: 3mm !important;
+  max-width: none !important;
+}
+
+.page-hero__description {
+  max-width: none !important;
+  color: #333 !important;
+}
+
+.breadcrumbs {
+  display: none !important;
+}
+
+.btn {
+  display: none !important;
+}
+
+.link-arrow {
+  border: 0 !important;
+  color: #111 !important;
+  font-size: 8pt !important;
+}
+
+.link-arrow .icon {
+  display: none;
+}
+
+.notice,
+.demo-note,
+.price-legal,
+.form-note {
+  border: 1pt solid #999 !important;
+  background: #fff !important;
+  color: #333 !important;
+  font-size: 8.5pt !important;
+}
+
+/* Horário ---------------------------------------------------------------- */
+
+.schedule-toolbar {
+  margin-bottom: 5mm !important;
+}
+
+.schedule-grid,
+.schedule-grid[data-view="week"],
+.schedule-grid[data-view="day"] {
+  display: block !important;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+.schedule-day,
+.schedule-grid[data-view="day"] .schedule-day {
+  display: block !important;
+  margin-bottom: 6mm !important;
+  border-top: 1.5pt solid #111 !important;
+  break-inside: avoid;
+}
+
+.schedule-grid[data-view="day"] .schedule-day:not(.is-active) {
+  display: none !important;
+}
+
+.schedule-day__name {
+  color: #111 !important;
+  font-size: 10pt !important;
+}
+
+.schedule-day__date {
+  color: #444 !important;
+}
+
+.schedule-day__sessions,
+.schedule-grid[data-view="day"] .schedule-day__sessions {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 2mm !important;
+}
+
+.session-card {
+  padding: 2.5mm !important;
+  border: 0.75pt solid #999 !important;
+  background: #fff !important;
+  color: #111 !important;
+  break-inside: avoid;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.session-card__time,
+.session-card__name,
+.session-card__duration,
+.session-card__meta,
+.session-card__level,
+.session-card__spots {
+  color: #111 !important;
+}
+
+.session-card__spots {
+  font-weight: 700;
+}
+
+.schedule-footer {
+  border-top: 1pt solid #999 !important;
+}
+
+/* Planos ----------------------------------------------------------------- */
+
+.plans-grid {
+  display: block !important;
+}
+
+.plan-card,
+.plan-card--featured {
+  display: block !important;
+  margin: 0 0 6mm !important;
+  padding: 0 !important;
+  border: 1.5pt solid #111 !important;
+  background: #fff !important;
+  color: #111 !important;
+  transform: none !important;
+  break-inside: avoid;
+}
+
+.plan-card__badge {
+  position: static !important;
+  display: inline-block !important;
+  padding: 1mm 2mm !important;
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.plan-card__head {
+  display: block !important;
+  padding: 4mm !important;
+  border-bottom: 1pt solid #999 !important;
+}
+
+.plan-card__kicker,
+.plan-card__tagline,
+.plan-card__period,
+.plan-card__price-note,
+.plan-card__save {
+  color: #444 !important;
+}
+
+.plan-card__name,
+.plan-card__value,
+.plan-card__currency {
+  color: #111 !important;
+}
+
+.plan-card__value {
+  font-size: 24pt !important;
+}
+
+.plan-card__includes,
+.plan-card__terms {
+  padding: 3mm 4mm !important;
+  border: 0 !important;
+}
+
+.plan-card__includes li,
+.plan-card__terms div,
+.plan-card__terms dt,
+.plan-card__terms dd {
+  color: #333 !important;
+  font-size: 9pt !important;
+}
+
+.plan-card__includes .icon {
+  display: inline-block !important;
+  width: 3mm !important;
+  color: #111 !important;
+}
+
+.comparison-table,
+.table-scroll {
+  border: 1pt solid #999 !important;
+  overflow: visible !important;
+  min-width: 0 !important;
+}
+
+.comparison-table {
+  min-width: 0 !important;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.6mm !important;
+  border: 0.5pt solid #bbb !important;
+  color: #111 !important;
+  font-size: 8.5pt !important;
+}
+
+.comparison-table thead th {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.comparison-table thead th.is-recommended {
+  color: #fff !important;
+  border-top: 0 !important;
+}
+
+/* FAQ -------------------------------------------------------------------- */
+
+.faq-list {
+  border-top: 1pt solid #111 !important;
+}
+
+.faq-item {
+  display: block !important;
+  break-inside: avoid;
+}
+
+.faq-item summary {
+  display: block !important;
+  min-height: 0 !important;
+  padding: 3mm 0 !important;
+  color: #111 !important;
+  font-size: 10pt !important;
+  font-weight: 700 !important;
+}
+
+.faq-item summary::after {
+  display: none !important;
+}
+
+.faq-item > *:not(summary) {
+  display: block !important;
+}
+
+.faq-item__answer {
+  max-width: none !important;
+  padding: 0 0 3mm !important;
+  color: #333 !important;
+}
+
+/* Conteúdo editorial ----------------------------------------------------- */
+
+.split,
+.beginner__grid,
+.today__grid,
+.class-body,
+.contact-layout,
+.legal-layout,
+.faq-layout,
+.about-intro,
+.community-grid {
+  display: block !important;
+}
+
+.detail-hero__grid {
+  display: block !important;
+}
+
+.detail-hero__media {
+  display: none !important;
+}
+
+.detail-facts {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  background: #fff !important;
+  color: #111 !important;
+  border: 1pt solid #999 !important;
+}
+
+.detail-fact {
+  border-color: #999 !important;
+  color: #111 !important;
+}
+
+.detail-fact span,
+.detail-fact strong {
+  color: #111 !important;
+}
+
+.class-aside,
+.form-aside,
+.legal-nav,
+.faq-intro,
+.beginner__lead {
+  position: static !important;
+}
+
+.class-aside {
+  margin-top: 6mm !important;
+}
+
+.comparison-table .icon,
+.btn .icon {
+  display: inline-block !important;
+}
+
+.footer__wordmark,
+.hero__stamp {
+  display: none !important;
+}

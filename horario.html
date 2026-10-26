@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horário de aulas e treino | FORJA Training Club Braga</title>
+  <meta name="description" content="Consulta as 45 aulas semanais da FORJA. Filtra por dia, modalidade, nível e treinador, vê lugares disponíveis e descarrega o horário em .ics ou PDF.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0B">
+  <link rel="canonical" href="https://forja.pt/horario.html">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FORJA Training Club">
+  <meta property="og:title" content="Horário de aulas — FORJA Training Club">
+  <meta property="og:description" content="45 aulas por semana, filtros por modalidade e nível. Encontra o teu próximo treino em Braga.">
+  <meta property="og:url" content="https://forja.pt/horario.html">
+  <meta property="og:image" content="https://forja.pt/images/og-forja.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/head.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://forja.pt/" },
+      { "@type": "ListItem", "position": 2, "name": "Horário", "item": "https://forja.pt/horario.html" }
+    ]
+  }
+  </script>
+</head>
+<body data-page="schedule">
+  <header class="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Localização">
+          <a href="index.html">Início</a>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+          <span class="breadcrumbs__current" aria-current="page">Horário</span>
+        </nav>
+        <div class="page-hero__grid">
+          <div>
+            <p class="eyebrow" style="margin-top: 1.5rem;">45 sessões por semana</p>
+            <h1 class="display-xl page-hero__title" id="page-title">O teu plano para a semana.</h1>
+            <p class="page-hero__description">Nove modalidades, vários níveis e horários antes e depois do trabalho. Filtra pelo que precisas e abre qualquer aula para veres todos os detalhes.</p>
+          </div>
+          <aside class="page-hero__aside">
+            <strong>Antes de vires</strong>
+            <p>Chega 10 minutos antes na primeira visita. Traz roupa desportiva, água e toalha. Há material de empréstimo para a aula experimental.</p>
+            <p class="demo-note" style="margin-top: 0.8rem;">Lugares e reservas simulados nesta demonstração.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="schedule-toolbar">
+          <div class="filter-panel">
+            <div class="filter-panel__top">
+              <h2 class="filter-panel__title" id="schedule-title">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sliders"></use></svg>
+                Filtrar horário
+              </h2>
+              <p class="filter-result" data-results-label role="status" aria-live="polite">A carregar aulas...</p>
+            </div>
+
+            <form class="filter-form" data-schedule-filters novalidate>
+              <div class="filter-grid filter-grid--schedule">
+                <div class="filter-field">
+                  <label for="filter-q">Pesquisar</label>
+                  <div class="search-field">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"></use></svg>
+                    <input id="filter-q" name="q" type="search" placeholder="Aula, treinador ou sala" autocomplete="off">
+                  </div>
+                </div>
+                <div class="filter-field">
+                  <label for="filter-day">Dia</label>
+                  <select id="filter-day" name="dia">
+                    <option value="">Todos os dias</option>
+                  </select>
+                </div>
+                <div class="filter-field">
+                  <label for="filter-class">Modalidade</label>
+                  <select id="filter-class" name="modalidade">
+                    <option value="">Todas</option>
+                  </select>
+                </div>
+                <div class="filter-field">
+                  <label for="filter-level">Nível</label>
+                  <select id="filter-level" name="nivel">
+                    <option value="">Todos</option>
+                  </select>
+                </div>
+                <div class="filter-field">
+                  <label for="filter-trainer">Treinador</label>
+                  <select id="filter-trainer" name="treinador">
+                    <option value="">Todos</option>
+                  </select>
+                </div>
+              </div>
+              <div class="filter-panel__actions">
+                <button class="filter-reset" type="button" data-reset-filters>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+                  Limpar filtros
+                </button>
+                <span class="filter-result">Semana atual · horário recorrente</span>
+              </div>
+            </form>
+          </div>
+
+          <div class="schedule-view-row">
+            <div>
+              <p class="eyebrow" style="margin-bottom: 0.7rem;">Semana de <span id="week-range">—</span></p>
+              <div class="view-toggle" role="group" aria-label="Vista do horário">
+                <button type="button" data-schedule-view="week" aria-pressed="true">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-grid"></use></svg>
+                  Semana
+                </button>
+                <button type="button" data-schedule-view="day" aria-pressed="false">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-list"></use></svg>
+                  Dia
+                </button>
+              </div>
+            </div>
+            <div class="schedule-utility">
+              <button class="btn btn--sweep btn--sm" type="button" data-download-ics>
+                <span>Descarregar .ics</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-download"></use></svg>
+              </button>
+              <button class="btn btn--ghost btn--sm" type="button" data-print-schedule>
+                <span>Imprimir / PDF</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-print"></use></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-tabs" data-day-tabs aria-label="Escolher dia" role="group" hidden></div>
+
+        <div class="schedule-grid" id="schedule-grid" data-view="week" aria-live="polite">
+          <!-- Preenchido por js/schedule.js -->
+        </div>
+
+        <footer class="schedule-footer">
+          <p class="schedule-footer__note">* O número de lugares é ilustrativo nesta demonstração. As aulas podem sofrer alterações pontuais; confirma na receção ou pelo WhatsApp. Horário em hora local de Braga.</p>
+          <div class="schedule-footer__actions">
+            <a class="btn btn--solid btn--sm" href="experimenta.html" data-track="cta_trial" data-track-location="schedule_footer">
+              <span>Marcar experiência</span>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="session-dialog" aria-labelledby="session-dialog-title">
+    <div class="modal__scroll">
+      <div class="modal__head">
+        <span class="modal__eyebrow" data-session-dialog-eyebrow>Aula</span>
+        <button class="modal__close" type="button" data-dialog-close aria-label="Fechar detalhes da aula">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+      <div class="modal__body" data-session-dialog-body>
+        <p class="muted">A carregar detalhes...</p>
+      </div>
+      <div class="modal__footer">
+        <span class="modal__footer-note">* Lugares simulados</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <button class="btn btn--sweep btn--sm" type="button" data-session-ics>
+            <span>Guardar .ics</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-download"></use></svg>
+          </button>
+          <a class="btn btn--solid btn--sm" data-session-book href="experimenta.html">
+            <span>Reservar aula</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer"></footer>
+  <noscript>
+    <p style="padding: 1rem; background: #F4F3EF; color: #0A0A0B;">O horário interativo precisa de JavaScript. Liga para 253 456 789 para reservares ou consultares as aulas.</p>
+  </noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

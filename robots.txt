@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /design-system.html
+
+# Substituir o domínio de exemplo pelo domínio final antes da publicação.
+Sitemap: https://forja.pt/sitemap.xml

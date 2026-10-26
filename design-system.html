@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de design (interno) | FORJA Training Club</title>
+  <meta name="description" content="Página interna de referência visual da FORJA Training Club: cores, tipografia, botões, formulários, cartões, diálogos e estados de interface.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0A0A0B">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/head.js"></script>
+</head>
+<body data-page="design">
+  <header class="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow" style="margin-top:1.5rem;">Documento interno · v1.0</p>
+        <h1 class="display-xl page-hero__title" id="page-title">O sistema por trás da forja.</h1>
+        <p class="page-hero__description">Uma página de controlo para verificar tipografia, cor, componentes e estados. Não é uma página de marketing e não deve ser indexada.</p>
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="container">
+        <div class="ds-section">
+          <div class="ds-heading">
+            <span>01</span>
+            <h2>Cores base</h2>
+          </div>
+          <div class="swatch-grid">
+            <div class="swatch">
+              <div class="swatch__color" style="background:#0A0A0B;"></div>
+              <div class="swatch__info"><strong>Ink</strong><code>#0A0A0B</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch__color" style="background:#17181B;"></div>
+              <div class="swatch__info"><strong>Graphite</strong><code>#17181B</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch__color" style="background:#F4F3EF;"></div>
+              <div class="swatch__info"><strong>Bone</strong><code>#F4F3EF</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch__color" style="background:#9AA0A8;"></div>
+              <div class="swatch__info"><strong>Steel</strong><code>#9AA0A8</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch__color" style="background:#2D5BFF;"></div>
+              <div class="swatch__info"><strong>Signal blue</strong><code>#2D5BFF</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch__color" style="background:#91A6FF;"></div>
+              <div class="swatch__info"><strong>Blue text / dark</strong><code>#91A6FF</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch__color" style="background:#2146C9;"></div>
+              <div class="swatch__info"><strong>Blue text / light</strong><code>#2146C9</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch__color" style="background:#FFFFFF; border-bottom:1px solid var(--line);"></div>
+              <div class="swatch__info"><strong>White</strong><code>#FFFFFF</code></div>
+            </div>
+          </div>
+          <p class="demo-note" style="margin-top:1rem;">Signal blue fica para ação, foco, estados ativos e números de destaque. Em texto pequeno sobre tinta usa <code>--blue-bright</code>; sobre osso, <code>--blue-deep</code>. O azul não é decoração de fundo.</p>
+        </div>
+
+        <div class="ds-section">
+          <div class="ds-heading">
+            <span>02</span>
+            <h2>Tipografia</h2>
+          </div>
+          <div class="type-ramp">
+            <div class="type-line">
+              <code>display-xxl / Anton</code>
+              <p class="display-xxl">Força real</p>
+            </div>
+            <div class="type-line">
+              <code>display-xl / Anton</code>
+              <p class="display-xl">Sem atalhos</p>
+            </div>
+            <div class="type-line">
+              <code>display-lg / Anton</code>
+              <p class="display-lg">Trabalho honesto</p>
+            </div>
+            <div class="type-line">
+              <code>display-md / Anton</code>
+              <p class="display-md">Progressão diária</p>
+            </div>
+            <div class="type-line">
+              <code>body / DM Sans</code>
+              <p style="white-space:normal; font-size:0.95rem; line-height:1.7;">Texto corrido em DM Sans. Frases claras, medidas de linha contidas e contraste suficiente para leitura em ecrã e em papel.</p>
+            </div>
+            <div class="type-line">
+              <code>eyebrow / DM Sans 700</code>
+              <p class="eyebrow">Treino acompanhado · Braga</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ds-section">
+          <div class="ds-heading">
+            <span>03</span>
+            <h2>Botões, etiquetas e ligações</h2>
+          </div>
+          <div class="ds-grid">
+            <div class="demo-panel">
+              <p class="eyebrow" style="margin-bottom:1rem;">Sobre fundo escuro</p>
+              <div class="demo-row">
+                <button class="btn btn--solid" type="button"><span>Ação principal</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></button>
+                <button class="btn btn--sweep" type="button"><span>Ação secundária</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+                <button class="btn btn--ghost" type="button"><span>Ação discreta</span></button>
+              </div>
+              <div class="demo-row" style="margin-top:1rem;">
+                <span class="tag">Todos os níveis</span>
+                <span class="tag tag--accent">Força</span>
+                <button class="chip is-active" type="button" aria-pressed="true">Ativo</button>
+                <button class="chip" type="button" aria-pressed="false">Inativo</button>
+              </div>
+              <div class="demo-row" style="margin-top:1rem;">
+                <a class="link-arrow" href="aulas.html">Ligação com seta <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+              </div>
+              <div class="demo-row" style="margin-top:1.4rem;">
+                <button class="btn btn--solid btn--sm" type="button" data-ds-toast><span>Testar notificação</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-spark"></use></svg></button>
+                <button class="btn btn--ghost btn--sm" type="button" data-open-ds-dialog><span>Abrir diálogo</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-grid"></use></svg></button>
+              </div>
+            </div>
+            <div class="demo-panel demo-panel--light">
+              <p class="eyebrow" style="margin-bottom:1rem;">Sobre fundo osso</p>
+              <div class="demo-row">
+                <button class="btn btn--solid" type="button"><span>Ação principal</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></button>
+                <button class="btn btn--sweep" type="button"><span>Ação secundária</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+                <button class="btn btn--ghost" type="button"><span>Ação discreta</span></button>
+              </div>
+              <div class="demo-row" style="margin-top:1rem;">
+                <span class="tag">Presencial</span>
+                <span class="tag tag--accent">Destaque</span>
+                <span class="chip is-active">Ativo</span>
+                <span class="chip">Inativo</span>
+              </div>
+              <p class="demo-note" style="margin-top:1rem;">Os estados de foco usam sempre um contorno azul de 2 px, visível sobre ambas as superfícies.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ds-section">
+          <div class="ds-heading">
+            <span>04</span>
+            <h2>Formulários e estados</h2>
+          </div>
+          <div class="ds-grid">
+            <form class="demo-panel" data-ds-form novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label class="form-field__label" for="ds-name">Nome</label>
+                  <input id="ds-name" name="nome" type="text" placeholder="O teu nome">
+                </div>
+                <div class="form-field">
+                  <label class="form-field__label" for="ds-email">Email com erro</label>
+                  <input id="ds-email" name="email" type="email" value="email-invalido" aria-invalid="true" aria-describedby="ds-email-error" style="border-color:#c63d3d;">
+                  <p class="form-field__error" id="ds-email-error">Indica um email válido.</p>
+                </div>
+                <div class="form-field form-field--full">
+                  <label class="form-field__label" for="ds-select">Seleção</label>
+                  <select id="ds-select">
+                    <option>Aula experimental</option>
+                    <option>Visita e avaliação</option>
+                  </select>
+                </div>
+                <div class="form-field form-field--full">
+                  <label class="form-field__label" for="ds-message">Mensagem</label>
+                  <textarea id="ds-message" placeholder="Escreve aqui..."></textarea>
+                </div>
+              </div>
+              <div class="consent-list">
+                <label class="checkbox" for="ds-consent">
+                  <input id="ds-consent" type="checkbox">
+                  <span>Exemplo de consentimento com texto de apoio e ligação.</span>
+                </label>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn--solid btn--sm" type="submit"><span>Testar formulário</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg></button>
+              </div>
+            </form>
+            <div class="demo-panel">
+              <p class="eyebrow" style="margin-bottom:1rem;">Acordeão nativo</p>
+              <div class="faq-list">
+                <details class="faq-item" open>
+                  <summary>Este componente mantém o teclado nativo?</summary>
+                  <div class="faq-item__answer"><p>Sim. O elemento <code>details</code> abre e fecha com Enter ou Espaço, mantém o foco no resumo e não exige ARIA adicional.</p></div>
+                </details>
+                <details class="faq-item">
+                  <summary>O movimento é reduzido quando o sistema pede?</summary>
+                  <div class="faq-item__answer"><p>Sim. Com <code>prefers-reduced-motion</code>, o marquee pára e as revelações ficam imediatamente visíveis.</p></div>
+                </details>
+              </div>
+              <div class="notice" style="margin-top:1.2rem;">
+                <p><strong>Checklist:</strong> foco visível, alvo de toque, contraste, ordem de leitura, estados de erro e conteúdo sem depender apenas de cor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ds-section">
+          <div class="ds-heading">
+            <span>05</span>
+            <h2>Cartões e media</h2>
+          </div>
+          <div class="ds-grid">
+            <article class="class-card">
+              <div class="class-card__link">
+                <figure class="class-card__media">
+                  <img src="images/class-functional.webp" alt="Exemplo de imagem de aula funcional." width="1000" height="750" loading="lazy">
+                </figure>
+                <div class="class-card__body">
+                  <span class="class-card__index">01</span>
+                  <h3 class="class-card__title">Treino Funcional</h3>
+                  <p class="class-card__summary">Padrões de movimento, força útil e condição física para o dia a dia.</p>
+                  <p class="class-card__meta"><span>50 min</span><span>Iniciante a avançado</span></p>
+                </div>
+              </div>
+            </article>
+            <div class="demo-stack">
+              <div class="summary-card">
+                <div class="summary-card__head"><span>Resumo de marcação</span><span>Simulado</span></div>
+                <dl class="summary-card__body">
+                  <div class="summary-line"><dt>Data</dt><dd>Segunda, 26 out</dd></div>
+                  <div class="summary-line"><dt>Hora</dt><dd>18h30</dd></div>
+                  <div class="summary-line summary-line--full"><dt>Modalidade</dt><dd>Treino Funcional · Diogo</dd></div>
+                </dl>
+              </div>
+              <div class="notice">
+                <p>O sistema alterna superfícies claras e escuras, mas mantém a mesma grelha, escala tipográfica e hierarquia de ações.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ds-section" style="border-bottom:0;">
+          <div class="ds-heading">
+            <span>06</span>
+            <h2>Tokens e princípios</h2>
+          </div>
+          <div class="ds-grid">
+            <div>
+              <div class="ds-token"><span>Raio de canto</span><code>0</code></div>
+              <div class="ds-token"><span>Contorno de foco</span><code>2px solid #2D5BFF</code></div>
+              <div class="ds-token"><span>Linha fina</span><code>1px rgba(244,243,239,.14)</code></div>
+              <div class="ds-token"><span>Grelha editorial</span><code>12 colunas</code></div>
+              <div class="ds-token"><span>Animação padrão</span><code>240–650ms · ease-out</code></div>
+            </div>
+            <div class="notice">
+              <p><strong>Princípios:</strong> cortes retos, tipografia como estrutura, imagens com grão e contraste, azul com função. Nada de gradientes decorativos, sombras suaves ou componentes arredondados.</p>
+              <p style="margin-top:.6rem;">Página interna de controlo. Não indexar. Alterações ao sistema devem ser refletidas em <code>css/style.css</code> e neste inventário.</p>
+            </div>
+          </div>
+          <div class="legal-actions">
+            <a class="btn btn--ghost btn--sm" href="index.html"><span>Voltar à home</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-left"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="ds-dialog" aria-labelledby="ds-dialog-title">
+    <div class="modal__scroll">
+      <div class="modal__head">
+        <span class="modal__eyebrow">Exemplo de diálogo</span>
+        <button class="modal__close" type="button" data-dialog-close aria-label="Fechar diálogo">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+      <div class="modal__body">
+        <h2 class="display-md" id="ds-dialog-title">Um modal com foco gerido.</h2>
+        <p class="muted" style="margin-top:.8rem; line-height:1.7;">O fundo não deve receber interação enquanto o diálogo está aberto. Escape fecha, o clique no backdrop fecha e o foco regressa ao elemento que abriu.</p>
+        <div class="notice" style="margin-top:1rem;"><p>Este exemplo usa o elemento nativo <code>dialog</code> e os utilitários partilhados de <code>js/ui.js</code>.</p></div>
+      </div>
+      <div class="modal__footer">
+        <span class="modal__footer-note">Ação demonstrativa</span>
+        <button class="btn btn--solid btn--sm" type="button" data-dialog-close><span>Fechar</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg></button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer"></footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
