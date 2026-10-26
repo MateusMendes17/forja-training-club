@@ -330,7 +330,7 @@ function buildICS(sessions, sourceDate = new Date()) {
       `DESCRIPTION:${escapeICS(
         `${classItem?.tagline ?? ""}. Treinador: ${session.trainerName}. Nível: ${session.level}. Duração: ${session.duration} min.`,
       )}`,
-      `URL:https://forja.pt/aula.html?id=${encodeURIComponent(session.classId)}`,
+      `URL:https://forja-training-club.vercel.app/aula.html?id=${encodeURIComponent(session.classId)}`,
       "END:VEVENT",
     );
   });

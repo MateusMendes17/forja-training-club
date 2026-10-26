@@ -28,7 +28,7 @@ export const site = {
   email: "ola@forja.pt",
   instagram: "@forja.braga",
   instagramUrl: "https://instagram.com/forja.braga",
-  url: "https://forja.pt",
+  url: "https://forja-training-club.vercel.app",
   mapEmbed:
     "https://www.google.com/maps?q=Avenida+da+Liberdade+410,+4710-251+Braga,+Portugal&output=embed",
 };

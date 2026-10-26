@@ -252,7 +252,7 @@ function setMeta(item) {
   document.querySelector('meta[name="description"]')?.setAttribute("content", description);
   document.querySelector('meta[property="og:title"]')?.setAttribute("content", `${item.name} — FORJA Training Club`);
   document.querySelector('meta[property="og:description"]')?.setAttribute("content", description);
-  const canonical = `https://forja.pt/aula.html?id=${encodeURIComponent(item.id)}`;
+  const canonical = `https://forja-training-club.vercel.app/aula.html?id=${encodeURIComponent(item.id)}`;
   document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonical);
   document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonical);
 }

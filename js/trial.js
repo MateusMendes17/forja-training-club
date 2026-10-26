@@ -449,7 +449,7 @@ function buildICS(data) {
     `SUMMARY:${escapeICS(title)}`,
     `LOCATION:${escapeICS(`${site.address.street}, ${site.address.postalCode} ${site.address.city}`)}`,
     `DESCRIPTION:${escapeICS(description)}`,
-    "URL:https://forja.pt/experimenta.html",
+    "URL:https://forja-training-club.vercel.app/experimenta.html",
     "END:VEVENT",
     "END:VCALENDAR",
     "",

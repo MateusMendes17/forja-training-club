@@ -2,6 +2,14 @@
 
 Site estático, responsivo e sem dependências de framework para a FORJA Training Club, um ginásio em Braga. O conceito visual é uma oficina de treino industrial: tipografia condensada, grelha técnica, cortes retos, alternância de superfícies claras/escuras e azul reservado a ações, foco e números.
 
+## Publicação
+
+- **Produção:** [forja-training-club.vercel.app](https://forja-training-club.vercel.app)
+- **Repositório público:** [github.com/MateusMendes17/forja-training-club](https://github.com/MateusMendes17/forja-training-club)
+- A Vercel está ligada ao repositório e ao branch `main`; cada novo push para `main` pode gerar um deployment de produção.
+- `404.html` é servida pela Vercel com o estado HTTP 404. Usa `<base href="/">` para que estilos, scripts e links resolvam a partir da raiz em qualquer endereço inválido. Deve ser mantida essa condição ao publicar em subdiretórios.
+- O URL acima é também o domínio canónico usado no HTML, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt`.
+
 ## Requisitos
 
 - Um browser moderno com suporte a ES modules, `dialog`, `details` e `IntersectionObserver`.
@@ -67,7 +75,7 @@ O HTML expõe `body[data-page]`; `js/main.js` importa apenas o módulo dessa pá
 
 ### Dados que devem ser substituídos
 
-- Domínio `https://forja.pt` em todas as páginas, `sitemap.xml`, `robots.txt`, JSON-LD e links canónicos.
+- O domínio público da demonstração é `https://forja-training-club.vercel.app`. Se for configurado um domínio próprio, substituir esse URL nas referências canónicas e de Open Graph das páginas, em `js/classes.js`, `js/data.js`, `js/schedule.js`, `js/trial.js`, `sitemap.xml`, `robots.txt` e no JSON-LD. O CSS não contém URLs de domínio.
 - Nome da entidade, NIPC, sede, email de privacidade, encarregado de proteção de dados e demais campos entre `[ ]` nas páginas legais.
 - Telefone `253 456 789`, WhatsApp `916 789 012`, email `ola@forja.pt`, Instagram e morada. Os dados centrais estão em `js/data.js`, mas existem cópias em texto nos formulários/página de contactos que devem ser atualizadas em conjunto.
 - Certificações e biografias dos treinadores. As certificações contêm deliberadamente `[NOME DA ENTIDADE]` e `[ENTIDADE A CONFIRMAR]`.
